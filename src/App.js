@@ -46,14 +46,14 @@ function App() {
         pro === "register" ? <div>
         <h1>Register Yourself !!! Who are you ?</h1>
         
-        <button onClick={()=>{setChoice("patient")}}>Patient</button>
+        <button onClick={()=>{setChoice("patient")}}>Farmer</button>
         <button onClick={()=>{setChoice("res")}}>Research Company</button>
         {
-          choice === "patient" ? <div><h2>Welcome New Patient</h2><form><input type="text" name="pId" onChange={(e)=>{setId(e.target.value)}} placeholder="Registration Id"></input><input type="text" onChange={(e)=>{console.log(e.target.value);setName(e.target.value)}} placeholder="Patient Name"></input> <button onClick={(e)=>{e.preventDefault(); console.log(pName,pId)}}>Add Patient</button></form></div> : choice === "res" ? <div><h2>Welcome New Company</h2><form><input type="text" name="cId" onChange={(e)=>{setCId(e.target.value)}} placeholder="Comapany Id"></input><input type="text" onChange={(e)=>{console.log(e.target.value);setCName(e.target.value)}} placeholder="Company Name"></input> <button onClick={(e)=>{e.preventDefault(); console.log(cName,cId)}}>Add Comapany</button></form></div>  : ""
+          choice === "patient" ? <div><h2>Welcome New Farmer</h2><form><input type="text" name="pId" onChange={(e)=>{setId(e.target.value)}} placeholder="Registration Id"></input><input type="text" onChange={(e)=>{console.log(e.target.value);setName(e.target.value)}} placeholder="Farmer Name"></input> <button onClick={(e)=>{e.preventDefault(); console.log(pName,pId)}}>Add Patient</button></form></div> : choice === "res" ? <div><h2>Welcome New Agro_Company</h2><form><input type="text" name="cId" onChange={(e)=>{setCId(e.target.value)}} placeholder="Comapany Id"></input><input type="text" onChange={(e)=>{console.log(e.target.value);setCName(e.target.value)}} placeholder="Company Name"></input> <button onClick={(e)=>{e.preventDefault(); console.log(cName,cId)}}>Add Comapany</button></form></div>  : ""
         } </div>
        : pro === "login" ? <div><h1>Welcome Back !!!</h1>
       
-        <button onClick={()=>{setChoice("pat")}}>Patient</button>
+        <button onClick={()=>{setChoice("pat")}}>Farmer</button>
        
         <button onClick={()=>{setChoice("r")}}>Research Company</button>
         {
